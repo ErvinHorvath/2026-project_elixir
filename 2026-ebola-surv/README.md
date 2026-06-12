@@ -19,20 +19,12 @@ Run download to get the data and automatically index it.
 make download
 ```
 
-The Makefile is using the SRR1553425 id, but you can swich it for any\ other sample using the SRR variable. For example:
-```
-make download SRR=SRR1553426
-```
-
 Second step
 Run fastq for creating reads.
 ```
 make fastq
 ```
-The Makefile is using 100000 measurements, but you can set your own using the LIMIT variable.
-```
-make fastq LIMIT=1000000
-```
+
 
 Third step
 Run align for creating bam files.
@@ -49,4 +41,15 @@ make vcf
 For deleting your directories use clean and add the targert folder \(bam, refs, reads, vcf).
 ```
 make clean -rf bam
+```
+
+## If you wish to use other samples, parameters
+The Makefile is using the SRR1553425 id, but you can swich it for any\ other sample using the SRR variable. For example:
+```
+make download SRR=SRR1553426
+```
+
+The Makefile is using 100000 measurements, but you can set your own using the LIMIT variable.
+```
+make fastq LIMIT=1000000
 ```
