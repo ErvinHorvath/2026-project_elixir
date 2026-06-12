@@ -9,7 +9,7 @@ https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000848505.1/
 ## Requirments
 For running the code successfully you should use the wget, gunzip, bwa, fastq-dump, samtools sort and samtools flagstat via pixi. Run the following:
 ```
-pixi add wget gunzip bwa fastq-dump samtools sort samtools flagstat
+pixi add wget bwa sra-tools samtools
 ```
 
 ## Getting started
@@ -40,7 +40,8 @@ Run align for creating bam files.
 make align
 ```
 Fourth step
-Run vcf for creating vcf files.
+Run vcf for creating vcf files.\
+The Makefile is using other pipline from the src directory to proceed this task.
 ```
 make vcf
 ```
