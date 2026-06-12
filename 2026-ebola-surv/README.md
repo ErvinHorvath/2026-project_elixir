@@ -1,7 +1,7 @@
 # Ebola mayinga genomic surveillance
 
 The sequence data is used from **DOI: 10.1126/science.1259657** project with **PRJNA257197** acceccion number.\
-The genomic assemly url:
+The reference genomic assemly url:
 ```
 https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000848505.1/
 ```
