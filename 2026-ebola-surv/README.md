@@ -1,8 +1,7 @@
-#Ebola mayinga genomic surveillance
+# Ebola mayinga genomic surveillance
 
-Sequence data are used from the PRJNA257197 project.
-
-The project accession url:
+Sequence data are used from the DOI: 10.1126/science.1259657 project with PRJNA257197 acceccion number.
+The genomic assemly url:
 ```
 https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000848505.1/
 ```
@@ -14,7 +13,7 @@ Run download to get the data and automatically index it.
 make download
 ```
 
-The Makefile is using the SRR1553425 id, but you can swich it for any other sample using the SRR variable. For example:
+The Makefile is using the SRR1553425 id, but you can swich it for any\ other sample using the SRR variable. For example:
 ```
 make download SRR=SRR1553426
 ```
