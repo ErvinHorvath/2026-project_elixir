@@ -1,14 +1,20 @@
 # Ebola mayinga genomic surveillance
 
-Sequence data are used from the DOI: 10.1126/science.1259657 project with PRJNA257197 acceccion number.
+The sequence data are used from DOI: 10.1126/science.1259657 project with PRJNA257197 acceccion number.
 The genomic assemly url:
 ```
 https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000848505.1/
 ```
 
+## Requirments
+For running the code successfully you should use the wget, gunzip, bwa, fastq-dump, samtools sort and samtools flagstat via pixi. Run the following:
+```
+pixi add wget gunzip bwa fastq-dump samtools sort samtools flagstat
+```
+
+## Getting started
 First step
 Run download to get the data and automatically index it.
-
 ```
 make download
 ```
@@ -23,6 +29,10 @@ Run fastq for creating reads.
 ```
 make fastq
 ```
+The Makefile is using 100000 measurements, but you can set your own using the LIMIT variable.
+```
+make fastq LIMIT=1000000
+```
 
 Third step
 Run align for creating bam files.
@@ -35,7 +45,7 @@ Run vcf for creating vcf files.
 make vcf
 ```
 
-For deleting your directories (bam, refs, reads, vcf) use clean.
+For deleting your directories use clean and add the targert folder \(bam, refs, reads, vcf).
 ```
-make clean
+make clean -rf bam
 ```
