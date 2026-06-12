@@ -1,6 +1,6 @@
 # Ebola mayinga genomic surveillance
 
-The sequence data are used from DOI: 10.1126/science.1259657 project with PRJNA257197 acceccion number.
+The sequence data are used from ##DOI: 10.1126/science.1259657## project with ##PRJNA257197## acceccion number.
 The genomic assemly url:
 ```
 https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000848505.1/
@@ -44,12 +44,12 @@ make clean -rf bam
 ```
 
 ## If you wish to use other samples, parameters
-The Makefile is using the SRR1553425 id, but you can swich it for any\ other sample using the SRR variable. For example:
+The Makefile is using the ##SRR1553425## id, but you can swich it for any\ other sample using the SRR variable. For example:
 ```
 make download SRR=SRR1553426
 ```
 
-The Makefile is using 100000 measurements, but you can set your own using the LIMIT variable.
+The Makefile is using ##100000## measurements, but you can set your own using the LIMIT variable.
 ```
-make fastq LIMIT=1000000
+make fastq LIMIT=10000
 ```
