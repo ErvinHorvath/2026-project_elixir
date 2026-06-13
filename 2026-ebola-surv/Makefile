@@ -31,13 +31,16 @@ R2=reads/${SRR}_2.fastq
 
 
 
-# No changes below this line, please!
+# ----------No changes below this line, please!-------------------
 
 help:
 	@echo "Use the source, Luke!"
 
+#Proceed all the steps
+repeat: download fastq align vcf
 
-# make the directories that are needed then download the files and unzip them.
+
+# Make the directories that are needed then download the files and unzip them.
 download:
 	mkdir -p refs
 	wget -O ${GENOME_FASTA}.gz ${FASTA_URL}

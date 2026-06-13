@@ -44,8 +44,8 @@ For **deleting** the created directories use clean and add the targert folder \(
 make clean -rf bam
 ```
 
-## If you wish to use other samples, parameters
-The Makefile is using the **SRR1553425** id, but you can swich it for any other sample using the SRR variable. For example:
+## If you wish to use other samples, parameters and repeat
+The Makefile is using the **SRR1553425** ID, but you can replace it with any other sample using the SRR variable. For example:
 ```
 make download SRR=SRR1553426
 ```
@@ -53,4 +53,8 @@ make download SRR=SRR1553426
 The Makefile is using **100000** measurements, but you can set your own using the LIMIT variable.
 ```
 make fastq LIMIT=10000
+```
+To proceed the whole workflow (download, fastq, align, vcf) type:
+```
+make repeat
 ```
