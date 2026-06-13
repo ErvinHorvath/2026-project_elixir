@@ -45,12 +45,12 @@ make clean -rf bam
 ```
 
 ## If you wish to use other samples, parameters and repeat
-The Makefile is using the **SRR1553425** ID, but you can replace it with any other sample using the SRR variable. For example:
+The Makefile is using the **SRR1553425** ID, but you can replace it with any other sample using the **SRR** variable. For example:
 ```
 make download SRR=SRR1553426
 ```
 
-The Makefile is using **100000** measurements, but you can set your own using the LIMIT variable.
+The Makefile is using **100000** measurements, but you can set your own using the **LIMIT** variable.
 ```
 make fastq LIMIT=10000
 ```
