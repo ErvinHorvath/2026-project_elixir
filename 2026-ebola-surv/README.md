@@ -58,3 +58,7 @@ To proceed the whole workflow (download, fastq, align, vcf) type:
 ```
 make repeat
 ```
+Or
+```
+make repeat SRR=SRR1553426
+```
