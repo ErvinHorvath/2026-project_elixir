@@ -13,7 +13,7 @@ Run the following:
 pixi add wget bwa sra-tools samtools
 ```
 
-# Getting started
+## mit ebčdel'nk; Getting started
 **First** step\
 Run download to get the data and automatically index it.
 ```
